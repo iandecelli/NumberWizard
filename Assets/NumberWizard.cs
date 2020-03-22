@@ -51,7 +51,7 @@ public class NumberWizard : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Return))
         {
             //Debug.Log("You pressed the RETURN key, AKA the \"ENTER\" key");
-            Debug.Log("VICTORY");
+            Debug.Log("GAME OVER");
             StartGame();
         }
 
@@ -59,6 +59,7 @@ public class NumberWizard : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("You pressed the SPACEBAR!!! WHY!!!");
+            StartGame();
         }
     }
     void NextGuess()
